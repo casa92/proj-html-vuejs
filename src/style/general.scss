@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //font-family: 'Oooh Baby', cursive;
+    //font-family: 'The Nautigal', cursive;
+    font-family: $primary_font;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+//buttons
+.btn-main {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: normal;
+
+    a {
+        display: inline-block;
+        padding: 11px 28px;        
+    }
+    &-primary-color {
+        background-color: $btn_primary_color;
+        color: #fff;
+
+        &:hover {
+            background-color: $btn_prymary_hover;
+            color: #fff;
+        }
+    }
+    &-secondary-color {
+        background-color: $btn_secondary_color;
+        color: $btn_primary_color;
+
+        &:hover {
+            background-color: $btn_primary_color;
+            color: #fff;
+        }
+    }
+}
+
+//circle
+
+

@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <EventsAdvisor/>
+    <Header/>
+    <Main/>
+    <Footer/>
+
+
+
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import EventsAdvisor from "./components/EventsAdvisor.vue";
+import Header from "./components/Header.vue";
+import Main from "./components/Main.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
+    EventsAdvisor,
+    Header,
+    Main,
+    Footer,
   },
 };
 </script>
 
 <style lang="scss">
+@import './style/variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=The+Nautigal:wght@400;700&display=swap');
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import './style/general.scss';
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  overflow: hidden;
 }
+
 </style>
