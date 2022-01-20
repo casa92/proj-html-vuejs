@@ -4,6 +4,7 @@
     <Header/>
     <Main/>
     <Footer/>
+    <Main/>
 
 
 

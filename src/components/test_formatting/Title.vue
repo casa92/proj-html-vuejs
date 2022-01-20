@@ -29,6 +29,7 @@ export default {
            color: $title_color;
            font-size: 40px;
            font-weight: 400;
+           margin-bottom: 2px;
        }
        h3 {
            font-size: 24px;

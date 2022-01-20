@@ -170,19 +170,19 @@
                 </div>
                 <div class="course-card-description">
                     <div class="price">
-                        $18.00
-                    </div>
+                        {{singleCard.price}}
+                    </div>  
                     <div class="title">
-                        The Acrylic Painting Accademy
+                        {{singleCard.title}}
                     </div>
                     <div class="features">
                         <div class="lessons">
                             <i class="far fa-file-alt"></i>
-                            4 lessons
+                            {{singleCard.numbOfLessons}}
                         </div>
                         <div class="students">
                             <i class="far fa-user"></i>
-                            50 Students
+                            {{singleCard.numbOfStudents}}
                         </div>
                     </div>   
                 </div>
@@ -286,15 +286,17 @@ export default {
         padding-bottom: 70px;
         .courses-list {
             text-align: initial;
-            padding: 0 50px;
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            
+            width: $width_primary_container;
+            margin: auto;
+            justify-content: space-between;
 
             .course-card {
-                width: 20%;
-                margin-right: 20px;
+                width: calc((100% / 4) - 15px);
                 margin-bottom: 35px;
+                cursor: pointer;
 
                 
                 &-description {

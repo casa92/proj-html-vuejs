@@ -12,9 +12,13 @@ a {
     text-decoration: none;
     color: inherit;
 }
+ul {
+    list-style-type: none;
+}
 
 img {
     max-width: 100%;
+    display: inline-block;
 }
 
 
@@ -25,6 +29,7 @@ img {
     font-size: 10px;
     font-weight: 700;
     line-height: normal;
+    z-index: 100;
 
     a {
         display: inline-block;

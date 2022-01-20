@@ -303,6 +303,7 @@ export default {
         }
         .testimonials {
             background-color: #faf8f6;
+            margin-top: 11px;
             padding-bottom: 70px;
 
             .testimonials-list {
