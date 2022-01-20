@@ -53,6 +53,10 @@
         <!-- video -->
         <div class="about-video">
             <img src="../../assets/img/artist-video-poster.jpg" alt="">
+            <img src="../../assets/img/icon-youtube-play.png" alt="">
+            <img src="../../assets/img/maxcoach-shape-05.png" alt="">
+            <img src="../../assets/img/maxcoach-shape-05.png" alt="">
+            <img src="../../assets/img/macchia-light-blue.svg" alt="">
         </div>
         <div class="waves">
             <div class="svg">
@@ -297,7 +301,48 @@ export default {
             position: relative;
 
             img {
-                width: 650px;
+                //immagine video
+                &:nth-child(1) {
+                    width: 650px;
+                    position: relative;
+                    z-index: 10;
+                }
+                //simbolo youtube
+                &:nth-child(2) {
+                    width: 80px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 15;
+
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                //cerchio puntinato
+                &:nth-child(3) {
+                    width: 130px;
+                    position: absolute;
+                    top: -20px;
+                    left: 340px;
+                    z-index: 5;
+                }
+                //cerchio puntinato
+                &:nth-child(4) {
+                    width: 130px;
+                    position: absolute;
+                    bottom: 0;
+                    right: 280px;
+                }
+                //macchia di colore
+                &:nth-child(5) {
+                    width: 180px;
+                    position: absolute;
+                    top: -50px;
+                    left: 260px;
+                }
+            
             }
 
         }
